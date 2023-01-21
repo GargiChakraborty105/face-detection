@@ -1,0 +1,18 @@
+STEPS TO TRAIN ALGORITHM
+
+STEP 1:Collect tons of faces.
+STEP 2:Make them black and white.
+STEP 3:Train the algorithm to detect faces.
+
+#display image
+cv2.imshow('Single Person',grayimg)
+cv2.waitKey()
+
+
+
+x,y,w,h = faceCoordinates[0]
+
+cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
+
+cv2.imshow('Window',img)
+cv2.waitKey()
